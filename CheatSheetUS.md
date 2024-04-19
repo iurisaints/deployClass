@@ -12,6 +12,7 @@ sudo dpkg-reconfigure --priority=low unattended-upgrades
 
 ### 3. Firewall
 sudo apt install ufw
+sudo ufw enable
 
 ### 4. Instalação do Docker
    - Execute os seguintes comandos para instalar o Docker:
@@ -40,3 +41,10 @@ sudo apt install ufw
    - Para reiniciar o servidor: `sudo reboot`
    - Para desligar o servidor: `sudo shutdown -h now`
    - Para verificar o status dos serviços: `sudo systemctl status nome_do_serviço`
+
+### 8. Habilitar SSH com UFW
+sudo ufw allow ssh
+
+### 9. Criando uma conta Não-Sudo
+sudo adduser user1
+(exigirá que preencha os dados para o cadastro da conta)
