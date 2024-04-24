@@ -5,31 +5,38 @@ Vamos iniciar com uma segurança básica do sistema:
 ``
 sudo useradd -m -d /opt/tomcat -U -s /bin/false tomcat
 ``
+
 Após isso vamos atualizar o sistema:
 ``
 sudo apt update
 ``
+
 E vamos verificar a versão do Java:
 ``
 java -version
 ``
+
 Vamos para a pasta /tmp:
 ``
 cd /tmp
 ``
+
 Agora baixe o tomcat:
 ``
 wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.1.23.tar.gz 
 ``
+
 E faça a extração pelo terminal:
 ``
 sudo tar xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
 ``
+
 Depois disso, você tem que garantir que o tomcat será instalado com esse código:
 ``
 sudo chown -R tomcat:tomcat /opt/tomcat/
 sudo chmod -R u+x /opt/tomcat/bin
 ``
+
 ## Configurando Usuários
 
 Abra o arquivo de edição de usuários:
@@ -45,7 +52,8 @@ Agora adicione essa parte antes do fim da tag de users e modifique a senha:
 <role rolename="admin-gui" />
 <user username="admin" password="admin_password" roles="manager-gui,admin-gui" />
 ``
-``
+
+
 Precisamos remover a restrição da página de Manager:
 ``
 sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
