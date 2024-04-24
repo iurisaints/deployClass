@@ -49,14 +49,7 @@ sudo nano /opt/tomcat/conf/tomcat-users.xml
 
 Agora adicione essa parte antes do fim da tag de users e modifique a senha:
 
-<html>
-<role rolename="manager-gui" />
-<user username="manager" password="manager_password" roles="manager-gui" />
-
-<role rolename="admin-gui" />
-<user username="admin" password="admin_password" roles="manager-gui,admin-gui" />
-</html>
-``
+https://github.com/iurisaints/deployClass/blob/main/senhasTomcat.html
 
 
 Precisamos remover a restrição da página de Manager:
