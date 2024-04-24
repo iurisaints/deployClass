@@ -23,7 +23,7 @@ cd /tmp
 
 Agora baixe o tomcat:
 ``
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.1.23.tar.gz 
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.23/bin/apache-tomcat-10.1.23.tar.gz 
 ``
 
 E faça a extração pelo terminal:
