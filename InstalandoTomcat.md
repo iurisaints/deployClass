@@ -58,15 +58,8 @@ sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
 ``
 
 E comentem a parte do Valve, tipo assim:
+![image](https://github.com/iurisaints/deployClass/assets/50501178/7738586c-b774-45f6-90b7-b273727c093e)
 
-...
-<Context antiResourceLocking="false" privileged="true" >
-  <CookieProcessor className="org.apache.tomcat.util.http.Rfc6265CookieProcessor"
-                   sameSiteCookies="strict" />
-(comente essa parte com o comentário do html)  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> (finaliza o comentário aqui)
-  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.Csr>
-</Context>
 
 
 Salva e repete para o host manager através daqui:
