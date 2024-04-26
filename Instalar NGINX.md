@@ -32,7 +32,7 @@ sudo systemctl status nginx
 sudo nano /etc/nginx/nginx.conf
 ```
 
-2. Localize o bloco `server` e modifique-o para servir arquivos a partir do diretório `/var/www/html`:
+2. Localize o bloco `http` e insira a linha de código a seguir:
 
 ```
 server {
